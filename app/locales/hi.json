@@ -1,0 +1,19 @@
+{
+  "HomePage": {
+    "title": "एग्रीकनेक्ट में आपका स्वागत है",
+    "greeting": "नमस्ते, {name}!",
+    "logoAlt": "एग्रीकनेक्ट लोगो",
+    "welcomeMessage": "कृषि आवश्यकताओं और कनेक्शन के लिए आपका वन-स्टॉप प्लेटफॉर्म।",
+    "getStartedPrompt": "हमारी सुविधाओं का अन्वेषण करें या आरंभ करने के लिए साइन इन करें।"
+  },
+  "Navigation": {
+    "home": "होम",
+    "market": "बाज़ार",
+    "advisory": "सलाहकार",
+    "dashboard": "tableau de bord",
+    "dbTest": "डीबी टेस्ट"
+  },
+  "LanguageSwitcher": {
+    "selectLanguage": "भाषा"
+  }
+}

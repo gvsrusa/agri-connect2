@@ -5,21 +5,21 @@
       "signalType": "project_initialization_needed",
       "target": "ExampleProject",
       "category": "need",
-      "strength": 0.85,
+      "strength": 0.782,
       "message": "Example: Project initialization is required. Overwrite this signal.",
       "data": {
         "initial_directive_type": "user_blueprint",
         "payload_path": "path/to/your/blueprint.md"
       },
       "timestamp_created": "YYYY-MM-DDTHH:MM:SSZ",
-      "last_updated_timestamp": "YYYY-MM-DDTHH:MM:SSZ"
+      "last_updated_timestamp": "2025-05-13T21:12:51.000Z"
     },
     {
       "id": "example-priority-001",
       "signalType": "prioritize_feature_X_development",
       "target": "ExampleFeature",
       "category": "priority",
-      "strength": 4.5,
+      "strength": 4.32,
       "message": "Example: High priority task - focus development on ExampleFeature. Replace this message.",
       "data": {
         "prd_path": "docs/example_prd.md",
@@ -43,21 +43,37 @@
         "user_directive": "EXAMPLE DIRECTIVE: Focus solely on implementing ExampleFeature using the specified data sources. Overwrite this directive."
       },
       "timestamp_created": "YYYY-MM-DDTHH:MM:SSZ",
-      "last_updated_timestamp": "YYYY-MM-DDTHH:MM:SSZ"
+      "last_updated_timestamp": "2025-05-13T21:12:51.000Z"
     },
     {
       "id": "example-state-001",
       "signalType": "framework_scaffolding_complete",
       "target": "ExampleProject",
       "category": "state",
-      "strength": 1.0,
+      "strength": 0.98,
       "message": "Example: Framework scaffolding has been completed. This is an example signal.",
       "data": {
         "report_path": "docs/example_scaffold_report.md",
         "scaffolded_modules": ["module_A_example", "module_B_example"]
       },
       "timestamp_created": "YYYY-MM-DDTHH:MM:SSZ",
-      "last_updated_timestamp": "YYYY-MM-DDTHH:MM:SSZ"
+      "last_updated_timestamp": "2025-05-13T21:12:51.000Z"
+    },
+    {
+      "id": "project_initialization_complete_agriconnect_1715652771000",
+      "signalType": "project_initialization_complete",
+      "target": "AgriConnect",
+      "category": "state",
+      "strength": 0.98,
+      "message": "Project initialization for AgriConnect complete. PRD processed and Master Project Plan available.",
+      "data": {
+        "blueprint_path": "docs/PRD.md",
+        "master_plan_path": "docs/Master_Project_Plan.md",
+        "original_user_directive_type": "initialize_project_from_blueprint",
+        "original_user_directive_payload_path": "docs/PRD.md"
+      },
+      "timestamp_created": "2025-05-13T21:12:51.000Z",
+      "last_updated_timestamp": "2025-05-13T21:12:51.000Z"
     }
   ],
   "documentation_registry": [
@@ -72,6 +88,18 @@
       "description": "Example: Specification document for a core feature. Overwrite this.",
       "type": "specification",
       "last_updated_timestamp": "YYYY-MM-DDTHH:MM:SSZ"
+    },
+    {
+      "file_path": "docs/PRD.md",
+      "description": "Product Requirements Document for AgriConnect",
+      "type": "project_blueprint",
+      "last_updated_timestamp": "2025-05-13T21:12:51.000Z"
+    },
+    {
+      "file_path": "docs/Master_Project_Plan.md",
+      "description": "Master Project Plan for AgriConnect",
+      "type": "project_plan",
+      "last_updated_timestamp": "2025-05-13T21:12:51.000Z"
     }
   ]
 }

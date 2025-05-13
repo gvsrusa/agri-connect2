@@ -1,0 +1,19 @@
+{
+  "HomePage": {
+    "title": "Welcome to AgriConnect",
+    "greeting": "Hello, {name}!",
+    "logoAlt": "AgriConnect Logo",
+    "welcomeMessage": "Your one-stop platform for agricultural needs and connections.",
+    "getStartedPrompt": "Explore our features or sign in to get started."
+  },
+  "Navigation": {
+    "home": "Home",
+    "market": "Marketplace",
+    "advisory": "Advisory",
+    "dashboard": "Dashboard",
+    "dbTest": "DB Test"
+  },
+  "LanguageSwitcher": {
+    "selectLanguage": "Language"
+  }
+}
