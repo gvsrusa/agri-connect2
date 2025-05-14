@@ -5,21 +5,21 @@
       "signalType": "project_initialization_needed",
       "target": "ExampleProject",
       "category": "need",
-      "strength": 0.71944,
+      "strength": 0.608934016,
       "message": "Example: Project initialization is required. Overwrite this signal.",
       "data": {
         "initial_directive_type": "user_blueprint",
         "payload_path": "path/to/your/blueprint.md"
       },
       "timestamp_created": "YYYY-MM-DDTHH:MM:SSZ",
-      "last_updated_timestamp": "2025-05-14T09:38:30.123Z"
+      "last_updated_timestamp": "2025-05-14T10:29:26Z"
     },
     {
       "id": "example-priority-001",
       "signalType": "prioritize_feature_X_development",
       "target": "ExampleFeature",
       "category": "priority",
-      "strength": 4.1472,
+      "strength": 3.82205952,
       "message": "Example: High priority task - focus development on ExampleFeature. Replace this message.",
       "data": {
         "prd_path": "docs/example_prd.md",
@@ -43,28 +43,31 @@
         "user_directive": "EXAMPLE DIRECTIVE: Focus solely on implementing ExampleFeature using the specified data sources. Overwrite this directive."
       },
       "timestamp_created": "YYYY-MM-DDTHH:MM:SSZ",
-      "last_updated_timestamp": "2025-05-14T09:38:30.123Z"
+      "last_updated_timestamp": "2025-05-14T10:29:26Z"
     },
     {
       "id": "example-state-001",
       "signalType": "framework_scaffolding_complete",
       "target": "ExampleProject",
       "category": "state",
-      "strength": 0.9604,
+      "strength": 0.92236816,
       "message": "Example: Framework scaffolding has been completed. This is an example signal.",
       "data": {
         "report_path": "docs/example_scaffold_report.md",
-        "scaffolded_modules": ["module_A_example", "module_B_example"]
+        "scaffolded_modules": [
+          "module_A_example",
+          "module_B_example"
+        ]
       },
       "timestamp_created": "YYYY-MM-DDTHH:MM:SSZ",
-      "last_updated_timestamp": "2025-05-14T09:38:30.123Z"
+      "last_updated_timestamp": "2025-05-14T10:29:26Z"
     },
     {
       "id": "project_initialization_complete_agriconnect_1715652771000",
       "signalType": "project_initialization_complete",
       "target": "AgriConnect",
       "category": "state",
-      "strength": 0.9604,
+      "strength": 0.92236816,
       "message": "Project initialization for AgriConnect complete. PRD processed and Master Project Plan available.",
       "data": {
         "blueprint_path": "docs/PRD.md",
@@ -73,117 +76,289 @@
         "original_user_directive_payload_path": "docs/PRD.md"
       },
       "timestamp_created": "2025-05-13T21:12:51.000Z",
-      "last_updated_timestamp": "2025-05-14T09:38:30.123Z"
+      "last_updated_timestamp": "2025-05-14T10:29:26Z"
     },
     {
       "id": "framework_scaffolding_complete_agriconnect_1747159110000",
       "signalType": "framework_scaffolding_complete",
       "target": "AgriConnect",
       "category": "state",
-      "strength": 1.0,
+      "strength": 0.9604,
       "message": "Framework scaffolding for AgriConnect is complete, including Next.js, Clerk, Supabase, Tailwind CSS, next-intl, and testing infrastructure.",
       "data": {
         "report_path": "docs/Framework_Scaffold_Report.md",
-        "scaffolded_components": ["Next.js", "Clerk", "Supabase", "Tailwind CSS", "next-intl", "Jest/RTL Testing Base"],
-        "key_files_configured": [
-          "app/next.config.ts", "app/package.json", "app/.gitignore", "app/eslint.config.mjs",
-          "app/.prettierrc.json", "app/src/middleware.ts", "app/tailwind.config.ts",
-          "app/postcss.config.mjs", "app/.env.local.example", "app/src/app/[locale]/layout.tsx",
-          "app/src/lib/supabaseClient.ts", "app/src/types/index.ts", "app/jest.config.ts"
+        "scaffolded_components": [
+          "Next.js",
+          "Clerk",
+          "Supabase",
+          "Tailwind CSS",
+          "next-intl",
+          "Jest/RTL Testing Base"
         ],
-        "test_stubs_created_for_features": ["UserAuthentication", "Marketplace", "Advisory", "Transport", "Feedback"]
+        "key_files_configured": [
+          "app/next.config.ts",
+          "app/package.json",
+          "app/.gitignore",
+          "app/eslint.config.mjs",
+          "app/.prettierrc.json",
+          "app/src/middleware.ts",
+          "app/tailwind.config.ts",
+          "app/postcss.config.mjs",
+          "app/.env.local.example",
+          "app/src/app/[locale]/layout.tsx",
+          "app/src/lib/supabaseClient.ts",
+          "app/src/types/index.ts",
+          "app/jest.config.ts"
+        ],
+        "test_stubs_created_for_features": [
+          "UserAuthentication",
+          "Marketplace",
+          "Advisory",
+          "Transport",
+          "Feedback"
+        ]
       },
       "timestamp_created": "2025-05-14T09:38:30.123Z",
-      "last_updated_timestamp": "2025-05-14T09:38:30.123Z"
+      "last_updated_timestamp": "2025-05-14T10:29:26Z"
     },
     {
       "id": "doc_registered_framework_scaffold_report_agriconnect_1747159110000",
       "signalType": "documentation_file_registered",
       "target": "AgriConnect",
       "category": "state",
-      "strength": 1.0,
+      "strength": 0.9604,
       "message": "Framework Scaffold Report for AgriConnect has been generated and registered.",
       "data": {
         "file_path": "docs/Framework_Scaffold_Report.md",
         "doc_type": "scaffolding_report"
       },
       "timestamp_created": "2025-05-14T09:38:30.123Z",
-      "last_updated_timestamp": "2025-05-14T09:38:30.123Z"
+      "last_updated_timestamp": "2025-05-14T10:29:26Z"
     },
     {
       "id": "test_planning_needed_userauth_agriconnect_1747159110000",
       "signalType": "test_planning_needed_for_feature_X",
       "target": "UserAuthentication",
       "category": "need",
-      "strength": 1.0,
+      "strength": 0.8464,
       "message": "Test planning is needed for the UserAuthentication feature in AgriConnect.",
       "data": {
         "feature_name": "UserAuthentication",
         "project": "AgriConnect",
-        "relevant_files": ["app/src/app/[locale]/sign-in/[[...sign-in]]/page.tsx", "app/src/app/[locale]/sign-up/[[...sign-up]]/page.tsx", "app/src/app/[locale]/sign-in/[[...sign-in]]/__tests__/SignInPage.test.tsx"]
+        "relevant_files": [
+          "app/src/app/[locale]/sign-in/[[...sign-in]]/page.tsx",
+          "app/src/app/[locale]/sign-up/[[...sign-up]]/page.tsx",
+          "app/src/app/[locale]/sign-in/[[...sign-in]]/__tests__/SignInPage.test.tsx"
+        ]
       },
       "timestamp_created": "2025-05-14T09:38:30.123Z",
-      "last_updated_timestamp": "2025-05-14T09:38:30.123Z"
+      "last_updated_timestamp": "2025-05-14T10:29:26Z"
     },
     {
       "id": "test_planning_needed_marketplace_agriconnect_1747159110000",
       "signalType": "test_planning_needed_for_feature_X",
       "target": "Marketplace",
       "category": "need",
-      "strength": 1.0,
+      "strength": 0.8464,
       "message": "Test planning is needed for the Marketplace feature in AgriConnect.",
       "data": {
         "feature_name": "Marketplace",
         "project": "AgriConnect",
-        "relevant_files": ["app/src/features/marketplace/__tests__/MarketplacePage.test.tsx"]
+        "relevant_files": [
+          "app/src/features/marketplace/__tests__/MarketplacePage.test.tsx"
+        ]
       },
       "timestamp_created": "2025-05-14T09:38:30.123Z",
-      "last_updated_timestamp": "2025-05-14T09:38:30.123Z"
+      "last_updated_timestamp": "2025-05-14T10:29:26Z"
     },
     {
       "id": "test_planning_needed_advisory_agriconnect_1747159110000",
       "signalType": "test_planning_needed_for_feature_X",
       "target": "Advisory",
       "category": "need",
-      "strength": 1.0,
+      "strength": 0.8464,
       "message": "Test planning is needed for the Advisory feature in AgriConnect.",
       "data": {
         "feature_name": "Advisory",
         "project": "AgriConnect",
-        "relevant_files": ["app/src/features/advisory/__tests__/AdvisoryPage.test.tsx"]
+        "relevant_files": [
+          "app/src/features/advisory/__tests__/AdvisoryPage.test.tsx"
+        ]
       },
       "timestamp_created": "2025-05-14T09:38:30.123Z",
-      "last_updated_timestamp": "2025-05-14T09:38:30.123Z"
+      "last_updated_timestamp": "2025-05-14T10:29:26Z"
     },
     {
       "id": "test_planning_needed_transport_agriconnect_1747159110000",
       "signalType": "test_planning_needed_for_feature_X",
       "target": "Transport",
       "category": "need",
-      "strength": 1.0,
+      "strength": 0.8464,
       "message": "Test planning is needed for the Transport feature in AgriConnect.",
       "data": {
         "feature_name": "Transport",
         "project": "AgriConnect",
-        "relevant_files": ["app/src/features/transport/__tests__/TransportPage.test.tsx"]
+        "relevant_files": [
+          "app/src/features/transport/__tests__/TransportPage.test.tsx"
+        ]
       },
       "timestamp_created": "2025-05-14T09:38:30.123Z",
-      "last_updated_timestamp": "2025-05-14T09:38:30.123Z"
+      "last_updated_timestamp": "2025-05-14T10:29:26Z"
     },
     {
       "id": "test_planning_needed_feedback_agriconnect_1747159110000",
       "signalType": "test_planning_needed_for_feature_X",
       "target": "Feedback",
       "category": "need",
-      "strength": 1.0,
+      "strength": 0.8464,
       "message": "Test planning is needed for the Feedback feature in AgriConnect.",
       "data": {
         "feature_name": "Feedback",
         "project": "AgriConnect",
-        "relevant_files": ["app/src/features/feedback/__tests__/FeedbackPage.test.tsx"]
+        "relevant_files": [
+          "app/src/features/feedback/__tests__/FeedbackPage.test.tsx"
+        ]
       },
       "timestamp_created": "2025-05-14T09:38:30.123Z",
-      "last_updated_timestamp": "2025-05-14T09:38:30.123Z"
+      "last_updated_timestamp": "2025-05-14T10:29:26Z"
+    },
+    {
+      "id": "test_plan_complete_UserAuthentication_LanguageSelection_1715681501000",
+      "signalType": "test_plan_complete_for_feature_X",
+      "target": "UserAuthentication_LanguageSelection",
+      "category": "state",
+      "strength": 0.9604,
+      "message": "Test plan for feature 'UserAuthentication_LanguageSelection' successfully created at docs/testplans/UserAuthentication_LanguageSelection_testplan.md.",
+      "data": {
+        "feature_name": "UserAuthentication_LanguageSelection",
+        "test_plan_path": "docs/testplans/UserAuthentication_LanguageSelection_testplan.md",
+        "spec_path": "docs/specs/UserAuthentication_LanguageSelection_overview.md",
+        "architecture_path": "docs/architecture/UserAuthentication_LanguageSelection_architecture.md"
+      },
+      "timestamp_created": "2025-05-14T10:11:41.000Z",
+      "last_updated_timestamp": "2025-05-14T10:29:26Z"
+    },
+    {
+      "id": "tests_implemented_UserAuthentication_LanguageSelection_1715681501000",
+      "signalType": "tests_implemented_for_feature_X",
+      "target": "UserAuthentication_LanguageSelection",
+      "category": "state",
+      "strength": 0.9604,
+      "message": "Initial tests for 'UserAuthentication_LanguageSelection' implemented and passing. Test files: LanguageSwitcher.test.tsx, SignInPage.test.tsx, SignUpPage.test.tsx. Mock created: app/__mocks__/next-intl/link.tsx.",
+      "data": {
+        "feature_name": "UserAuthentication_LanguageSelection",
+        "test_plan_path": "docs/testplans/UserAuthentication_LanguageSelection_testplan.md",
+        "implemented_test_files": [
+          "app/src/features/auth/__tests__/LanguageSwitcher.test.tsx",
+          "app/src/app/[locale]/sign-in/[[...sign-in]]/__tests__/SignInPage.test.tsx",
+          "app/src/app/[locale]/sign-up/[[...sign-up]]/__tests__/SignUpPage.test.tsx"
+        ],
+        "supporting_files_created": [
+          "app/__mocks__/next-intl/link.tsx"
+        ],
+        "future_work_notes": "Broader integration/E2E testing, non-functional tests, and expanded language coverage (e.g., Marathi) are future considerations."
+      },
+      "timestamp_created": "2025-05-14T10:11:41.000Z",
+      "last_updated_timestamp": "2025-05-14T10:29:26Z"
+    },
+    {
+      "id": "coding_needed_UserAuthentication_LanguageSelection_1715681501000",
+      "signalType": "coding_needed_for_feature_X",
+      "target": "UserAuthentication_LanguageSelection",
+      "category": "need",
+      "strength": 0.8464,
+      "message": "Feature 'UserAuthentication_LanguageSelection' is now ready for primary coding implementation. Test plan and foundational tests are in place.",
+      "data": {
+        "feature_name": "UserAuthentication_LanguageSelection",
+        "test_plan_path": "docs/testplans/UserAuthentication_LanguageSelection_testplan.md",
+        "spec_path": "docs/specs/UserAuthentication_LanguageSelection_overview.md",
+        "architecture_path": "docs/architecture/UserAuthentication_LanguageSelection_architecture.md",
+        "status": "Test plan and initial tests complete."
+      },
+      "timestamp_created": "2025-05-14T10:11:41.000Z",
+      "last_updated_timestamp": "2025-05-14T10:29:26Z"
+    },
+    {
+      "id": "doc_registered_UserAuthentication_LanguageSelection_testplan_1715681501000",
+      "signalType": "documentation_file_registered",
+      "target": "UserAuthentication_LanguageSelection",
+      "category": "state",
+      "strength": 0.9604,
+      "message": "Test plan document for 'UserAuthentication_LanguageSelection' registered: docs/testplans/UserAuthentication_LanguageSelection_testplan.md.",
+      "data": {
+        "feature_name": "UserAuthentication_LanguageSelection",
+        "file_path": "docs/testplans/UserAuthentication_LanguageSelection_testplan.md",
+        "doc_type": "test_plan"
+      },
+      "timestamp_created": "2025-05-14T10:11:41.000Z",
+      "last_updated_timestamp": "2025-05-14T10:29:26Z"
+    },
+    {
+      "id": "coding_complete_UserAuthentication_LanguageSelection_1715690966000",
+      "signalType": "coding_complete_for_feature_X",
+      "target": "UserAuthentication_LanguageSelection",
+      "category": "state",
+      "strength": 0.98,
+      "message": "Coding for feature 'UserAuthentication_LanguageSelection' is complete. All tests passing. Files modified: app/locales/mr.json, app/locales/en.json, app/locales/hi.json, app/src/components/ui/LanguageSwitcher.tsx, app/src/middleware.ts, app/src/app/[locale]/layout.tsx, app/src/app/api/clerk-webhooks/sync-user-profile/route.ts, app/src/app/api/user/update-language/route.ts, app/src/features/auth/__tests__/LanguageSwitcher.test.tsx.",
+      "data": {
+        "feature_name": "UserAuthentication_LanguageSelection",
+        "modified_files": [
+          "app/locales/mr.json",
+          "app/locales/en.json",
+          "app/locales/hi.json",
+          "app/src/components/ui/LanguageSwitcher.tsx",
+          "app/src/middleware.ts",
+          "app/src/app/[locale]/layout.tsx",
+          "app/src/app/api/clerk-webhooks/sync-user-profile/route.ts",
+          "app/src/app/api/user/update-language/route.ts",
+          "app/src/features/auth/__tests__/LanguageSwitcher.test.tsx"
+        ],
+        "test_status": "All tests passing",
+        "final_test_output": "The tests for the modified `LanguageSwitcher` component and other existing tests are passing. The requirement 'On login, fetch the `preferred_language` from their Supabase profile and apply it to the UI via `next-intl`' is not fully implemented as it typically requires session-aware logic in a layout or higher-order component to redirect or refresh based on the fetched preference post-login. This can be considered for further refinement."
+      },
+      "timestamp_created": "2025-05-14T10:29:26Z",
+      "last_updated_timestamp": "2025-05-14T10:29:26Z"
+    },
+    {
+      "id": "coding_attempt_complete_UserAuthentication_LanguageSelection_1715690966001",
+      "signalType": "coding_attempt_complete_for_feature",
+      "target": "UserAuthentication_LanguageSelection",
+      "category": "state",
+      "strength": 0.98,
+      "message": "Coder successfully completed development iteration for 'UserAuthentication_LanguageSelection'.",
+      "data": {
+        "feature_name": "UserAuthentication_LanguageSelection",
+        "status": "success",
+        "modified_files": [
+          "app/locales/mr.json",
+          "app/locales/en.json",
+          "app/locales/hi.json",
+          "app/src/components/ui/LanguageSwitcher.tsx",
+          "app/src/middleware.ts",
+          "app/src/app/[locale]/layout.tsx",
+          "app/src/app/api/clerk-webhooks/sync-user-profile/route.ts",
+          "app/src/app/api/user/update-language/route.ts",
+          "app/src/features/auth/__tests__/LanguageSwitcher.test.tsx"
+        ],
+        "final_test_output": "The tests for the modified `LanguageSwitcher` component and other existing tests are passing. The requirement 'On login, fetch the `preferred_language` from their Supabase profile and apply it to the UI via `next-intl`' is not fully implemented as it typically requires session-aware logic in a layout or higher-order component to redirect or refresh based on the fetched preference post-login. This can be considered for further refinement."
+      },
+      "timestamp_created": "2025-05-14T10:29:26Z",
+      "last_updated_timestamp": "2025-05-14T10:29:26Z"
+    },
+    {
+      "id": "anticipate_integration_UserAuthentication_LanguageSelection_1715690966002",
+      "signalType": "anticipate_integration_soon_for_feature_X",
+      "target": "UserAuthentication_LanguageSelection",
+      "category": "anticipatory",
+      "strength": 0.85,
+      "message": "Feature 'UserAuthentication_LanguageSelection' is ready for integration or further review of noted refinement (fetching/applying authenticated user language post-login).",
+      "data": {
+        "feature_name": "UserAuthentication_LanguageSelection",
+        "next_step_suggestion": "Integration or review of refinement",
+        "refinement_details": "Fully implementing the logic to fetch and apply an authenticated user's preferred language from Supabase immediately upon login, which might require session-aware handling in a layout or higher-order component."
+      },
+      "timestamp_created": "2025-05-14T10:29:26Z",
+      "last_updated_timestamp": "2025-05-14T10:29:26Z"
     }
   ],
   "documentation_registry": [
@@ -222,6 +397,18 @@
       "description": "Architecture details for User Authentication (Clerk) and Language Selection (next-intl) integration, including Supabase user_profiles interaction.",
       "type": "architecture_document",
       "last_updated_timestamp": "2025-05-14T09:38:30.123Z"
+    },
+    {
+      "file_path": "docs/testplans/UserAuthentication_LanguageSelection_testplan.md",
+      "description": "Detailed test plan for the UserAuthentication_LanguageSelection feature, outlining test strategy (unit, integration, E2E, usability, accessibility, performance, security, localization), scope, and ~105-130 test cases.",
+      "type": "test_plan",
+      "last_updated_timestamp": "2025-05-14T10:11:41.000Z"
+    },
+    {
+      "file_path": "docs/specs/UserAuthentication_LanguageSelection_overview.md",
+      "description": "Feature overview specification for UserAuthentication_LanguageSelection, consulted during test plan creation and initial test implementation.",
+      "type": "specification",
+      "last_updated_timestamp": "2025-05-14T10:11:41.000Z"
     }
   ]
 }

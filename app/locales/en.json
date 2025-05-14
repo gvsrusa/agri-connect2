@@ -14,12 +14,27 @@
     "dbTest": "DB Test"
   },
   "LanguageSwitcher": {
-    "selectLanguage": "Language"
+    "selectLanguage": "Language",
+    "english": "English",
+    "hindi": "Hindi",
+    "marathi": "Marathi"
+  },
+  "Auth": {
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "signOut": "Sign Out",
+    "userProfile": "User Profile"
   },
   "SignInPage": {
     "title": "Sign In to AgriConnect"
   },
   "SignUpPage": {
     "title": "Create your AgriConnect Account"
+  },
+  "Validation": {
+    "required": "This field is required"
+  },
+  "Error": {
+    "generic": "An error occurred. Please try again."
   }
 }

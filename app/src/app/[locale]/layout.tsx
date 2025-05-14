@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { ClerkProvider } from '@clerk/nextjs';
 import { Geist, Geist_Mono } from "next/font/google";
-import { NextIntlClientProvider, useMessages } from 'next-intl';
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages } from 'next-intl/server'; // Import getMessages for Server Components
 import Header from '@/components/layout/Header';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
@@ -29,11 +30,11 @@ interface RootLayoutProps {
   };
 }
 
-export default function RootLayout({
+export default async function RootLayout({ // Made the function async
   children,
   params: { locale },
 }: Readonly<RootLayoutProps>) {
-  const messages = useMessages();
+  const messages = await getMessages(); // Use await getMessages()
 
   return (
     <ClerkProvider>
