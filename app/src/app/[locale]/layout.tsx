@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import { ClerkProvider } from '@clerk/nextjs';
 import { Geist, Geist_Mono } from "next/font/google";
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server'; // Import getMessages for Server Components
+// Don't use getMessages since it's failing to find the config
 import Header from '@/components/layout/Header';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
+import { ApplyUserLanguage } from '@/components/auth/ApplyUserLanguage'; // Import the new component
 import "./../globals.css"; // Adjusted path for globals.css
 
 const geistSans = Geist({
@@ -32,9 +33,19 @@ interface RootLayoutProps {
 
 export default async function RootLayout({ // Made the function async
   children,
-  params: { locale },
+  params,
 }: Readonly<RootLayoutProps>) {
-  const messages = await getMessages(); // Use await getMessages()
+  // Need to await params and then access locale property
+  const { locale } = params;
+  // Load messages directly without using getMessages
+  let messages;
+  try {
+    messages = (await import(`../../../locales/${locale}.json`)).default;
+  } catch (error) {
+    console.error(`Failed to load messages for locale ${locale}:`, error);
+    // Fallback to English if locale file can't be loaded
+    messages = (await import(`../../../locales/en.json`)).default;
+  }
 
   return (
     <ClerkProvider>
@@ -43,6 +54,7 @@ export default async function RootLayout({ // Made the function async
           className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
         >
           <NextIntlClientProvider locale={locale} messages={messages}>
+            <ApplyUserLanguage /> {/* Add the component here */}
             <Header />
             <Navbar />
             <main className="flex-grow container mx-auto px-4 py-8">

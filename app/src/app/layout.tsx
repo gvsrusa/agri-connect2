@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { ClerkProvider } from '@clerk/nextjs';
 import { Geist, Geist_Mono } from "next/font/google";
-import { NextIntlClientProvider, useMessages } from 'next-intl';
+// Removed: import { NextIntlClientProvider, useMessages } from 'next-intl';
 import "./globals.css";
 
 const geistSans = Geist({
@@ -28,19 +28,18 @@ interface RootLayoutProps {
 
 export default function RootLayout({
   children,
-  params: { locale },
+  params: { locale }, // locale is still passed down
 }: Readonly<RootLayoutProps>) {
-  const messages = useMessages();
+  // Removed: const messages = useMessages();
 
   return (
     <ClerkProvider>
-      <html lang={locale}>
+      <html>
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
-          <NextIntlClientProvider locale={locale} messages={messages}>
-            {children}
-          </NextIntlClientProvider>
+          {/* NextIntlClientProvider will be in app/[locale]/layout.tsx */}
+          {children}
         </body>
       </html>
     </ClerkProvider>
