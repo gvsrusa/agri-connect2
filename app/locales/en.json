@@ -15,5 +15,11 @@
   },
   "LanguageSwitcher": {
     "selectLanguage": "Language"
+  },
+  "SignInPage": {
+    "title": "Sign In to AgriConnect"
+  },
+  "SignUpPage": {
+    "title": "Create your AgriConnect Account"
   }
 }

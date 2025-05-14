@@ -5,21 +5,21 @@
       "signalType": "project_initialization_needed",
       "target": "ExampleProject",
       "category": "need",
-      "strength": 0.782,
+      "strength": 0.71944,
       "message": "Example: Project initialization is required. Overwrite this signal.",
       "data": {
         "initial_directive_type": "user_blueprint",
         "payload_path": "path/to/your/blueprint.md"
       },
       "timestamp_created": "YYYY-MM-DDTHH:MM:SSZ",
-      "last_updated_timestamp": "2025-05-13T21:12:51.000Z"
+      "last_updated_timestamp": "2025-05-14T09:38:30.123Z"
     },
     {
       "id": "example-priority-001",
       "signalType": "prioritize_feature_X_development",
       "target": "ExampleFeature",
       "category": "priority",
-      "strength": 4.32,
+      "strength": 4.1472,
       "message": "Example: High priority task - focus development on ExampleFeature. Replace this message.",
       "data": {
         "prd_path": "docs/example_prd.md",
@@ -43,28 +43,28 @@
         "user_directive": "EXAMPLE DIRECTIVE: Focus solely on implementing ExampleFeature using the specified data sources. Overwrite this directive."
       },
       "timestamp_created": "YYYY-MM-DDTHH:MM:SSZ",
-      "last_updated_timestamp": "2025-05-13T21:12:51.000Z"
+      "last_updated_timestamp": "2025-05-14T09:38:30.123Z"
     },
     {
       "id": "example-state-001",
       "signalType": "framework_scaffolding_complete",
       "target": "ExampleProject",
       "category": "state",
-      "strength": 0.98,
+      "strength": 0.9604,
       "message": "Example: Framework scaffolding has been completed. This is an example signal.",
       "data": {
         "report_path": "docs/example_scaffold_report.md",
         "scaffolded_modules": ["module_A_example", "module_B_example"]
       },
       "timestamp_created": "YYYY-MM-DDTHH:MM:SSZ",
-      "last_updated_timestamp": "2025-05-13T21:12:51.000Z"
+      "last_updated_timestamp": "2025-05-14T09:38:30.123Z"
     },
     {
       "id": "project_initialization_complete_agriconnect_1715652771000",
       "signalType": "project_initialization_complete",
       "target": "AgriConnect",
       "category": "state",
-      "strength": 0.98,
+      "strength": 0.9604,
       "message": "Project initialization for AgriConnect complete. PRD processed and Master Project Plan available.",
       "data": {
         "blueprint_path": "docs/PRD.md",
@@ -73,7 +73,117 @@
         "original_user_directive_payload_path": "docs/PRD.md"
       },
       "timestamp_created": "2025-05-13T21:12:51.000Z",
-      "last_updated_timestamp": "2025-05-13T21:12:51.000Z"
+      "last_updated_timestamp": "2025-05-14T09:38:30.123Z"
+    },
+    {
+      "id": "framework_scaffolding_complete_agriconnect_1747159110000",
+      "signalType": "framework_scaffolding_complete",
+      "target": "AgriConnect",
+      "category": "state",
+      "strength": 1.0,
+      "message": "Framework scaffolding for AgriConnect is complete, including Next.js, Clerk, Supabase, Tailwind CSS, next-intl, and testing infrastructure.",
+      "data": {
+        "report_path": "docs/Framework_Scaffold_Report.md",
+        "scaffolded_components": ["Next.js", "Clerk", "Supabase", "Tailwind CSS", "next-intl", "Jest/RTL Testing Base"],
+        "key_files_configured": [
+          "app/next.config.ts", "app/package.json", "app/.gitignore", "app/eslint.config.mjs",
+          "app/.prettierrc.json", "app/src/middleware.ts", "app/tailwind.config.ts",
+          "app/postcss.config.mjs", "app/.env.local.example", "app/src/app/[locale]/layout.tsx",
+          "app/src/lib/supabaseClient.ts", "app/src/types/index.ts", "app/jest.config.ts"
+        ],
+        "test_stubs_created_for_features": ["UserAuthentication", "Marketplace", "Advisory", "Transport", "Feedback"]
+      },
+      "timestamp_created": "2025-05-14T09:38:30.123Z",
+      "last_updated_timestamp": "2025-05-14T09:38:30.123Z"
+    },
+    {
+      "id": "doc_registered_framework_scaffold_report_agriconnect_1747159110000",
+      "signalType": "documentation_file_registered",
+      "target": "AgriConnect",
+      "category": "state",
+      "strength": 1.0,
+      "message": "Framework Scaffold Report for AgriConnect has been generated and registered.",
+      "data": {
+        "file_path": "docs/Framework_Scaffold_Report.md",
+        "doc_type": "scaffolding_report"
+      },
+      "timestamp_created": "2025-05-14T09:38:30.123Z",
+      "last_updated_timestamp": "2025-05-14T09:38:30.123Z"
+    },
+    {
+      "id": "test_planning_needed_userauth_agriconnect_1747159110000",
+      "signalType": "test_planning_needed_for_feature_X",
+      "target": "UserAuthentication",
+      "category": "need",
+      "strength": 1.0,
+      "message": "Test planning is needed for the UserAuthentication feature in AgriConnect.",
+      "data": {
+        "feature_name": "UserAuthentication",
+        "project": "AgriConnect",
+        "relevant_files": ["app/src/app/[locale]/sign-in/[[...sign-in]]/page.tsx", "app/src/app/[locale]/sign-up/[[...sign-up]]/page.tsx", "app/src/app/[locale]/sign-in/[[...sign-in]]/__tests__/SignInPage.test.tsx"]
+      },
+      "timestamp_created": "2025-05-14T09:38:30.123Z",
+      "last_updated_timestamp": "2025-05-14T09:38:30.123Z"
+    },
+    {
+      "id": "test_planning_needed_marketplace_agriconnect_1747159110000",
+      "signalType": "test_planning_needed_for_feature_X",
+      "target": "Marketplace",
+      "category": "need",
+      "strength": 1.0,
+      "message": "Test planning is needed for the Marketplace feature in AgriConnect.",
+      "data": {
+        "feature_name": "Marketplace",
+        "project": "AgriConnect",
+        "relevant_files": ["app/src/features/marketplace/__tests__/MarketplacePage.test.tsx"]
+      },
+      "timestamp_created": "2025-05-14T09:38:30.123Z",
+      "last_updated_timestamp": "2025-05-14T09:38:30.123Z"
+    },
+    {
+      "id": "test_planning_needed_advisory_agriconnect_1747159110000",
+      "signalType": "test_planning_needed_for_feature_X",
+      "target": "Advisory",
+      "category": "need",
+      "strength": 1.0,
+      "message": "Test planning is needed for the Advisory feature in AgriConnect.",
+      "data": {
+        "feature_name": "Advisory",
+        "project": "AgriConnect",
+        "relevant_files": ["app/src/features/advisory/__tests__/AdvisoryPage.test.tsx"]
+      },
+      "timestamp_created": "2025-05-14T09:38:30.123Z",
+      "last_updated_timestamp": "2025-05-14T09:38:30.123Z"
+    },
+    {
+      "id": "test_planning_needed_transport_agriconnect_1747159110000",
+      "signalType": "test_planning_needed_for_feature_X",
+      "target": "Transport",
+      "category": "need",
+      "strength": 1.0,
+      "message": "Test planning is needed for the Transport feature in AgriConnect.",
+      "data": {
+        "feature_name": "Transport",
+        "project": "AgriConnect",
+        "relevant_files": ["app/src/features/transport/__tests__/TransportPage.test.tsx"]
+      },
+      "timestamp_created": "2025-05-14T09:38:30.123Z",
+      "last_updated_timestamp": "2025-05-14T09:38:30.123Z"
+    },
+    {
+      "id": "test_planning_needed_feedback_agriconnect_1747159110000",
+      "signalType": "test_planning_needed_for_feature_X",
+      "target": "Feedback",
+      "category": "need",
+      "strength": 1.0,
+      "message": "Test planning is needed for the Feedback feature in AgriConnect.",
+      "data": {
+        "feature_name": "Feedback",
+        "project": "AgriConnect",
+        "relevant_files": ["app/src/features/feedback/__tests__/FeedbackPage.test.tsx"]
+      },
+      "timestamp_created": "2025-05-14T09:38:30.123Z",
+      "last_updated_timestamp": "2025-05-14T09:38:30.123Z"
     }
   ],
   "documentation_registry": [
@@ -100,6 +210,18 @@
       "description": "Master Project Plan for AgriConnect",
       "type": "project_plan",
       "last_updated_timestamp": "2025-05-13T21:12:51.000Z"
+    },
+    {
+      "file_path": "docs/Framework_Scaffold_Report.md",
+      "description": "Comprehensive report detailing the framework scaffolding activities for the AgriConnect project, including Next.js setup, library integrations (Clerk, Supabase, Tailwind, next-intl), and initial testing infrastructure.",
+      "type": "scaffolding_report",
+      "last_updated_timestamp": "2025-05-14T09:38:30.123Z"
+    },
+    {
+      "file_path": "docs/architecture/UserAuthentication_LanguageSelection_architecture.md",
+      "description": "Architecture details for User Authentication (Clerk) and Language Selection (next-intl) integration, including Supabase user_profiles interaction.",
+      "type": "architecture_document",
+      "last_updated_timestamp": "2025-05-14T09:38:30.123Z"
     }
   ]
 }
