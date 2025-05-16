@@ -1,0 +1,240 @@
+{
+  "Header": {
+    "home": "Home",
+    "marketplace": "Marketplace",
+    "marketPrices": "Market Prices",
+    "cropAdvisory": "Crop Advisory",
+    "postHarvestGuidance": "Post-Harvest Guidance",
+    "requestTransportation": "Request Transportation",
+    "browseTransporters": "Browse Transporters",
+    "submitFeedback": "Submit Feedback",
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "signOut": "Sign Out",
+    "profile": "Profile"
+  },
+  "UserProfile": {
+    "title": "User Profile",
+    "welcome": "Welcome to your profile page."
+  },
+  "SignIn": {
+    "title": "Sign In to AgriConnect",
+    "label": "Sign In"
+  },
+  "SignUp": {
+    "title": "Sign Up for AgriConnect",
+    "label": "Sign Up"
+  },
+  "Common": {
+    "email": "Email",
+    "password": "Password",
+    "submit": "Submit",
+    "loading": "Loading..."
+  },
+  "HomePage": {
+    "title": "Welcome to AgriConnect",
+    "tagline": "Connecting Farmers, Cultivating Futures"
+  },
+  "Marketplace": {
+    "title": "Marketplace",
+    "welcome": "Explore available produce from local farmers.",
+    "listCrop": "List Your Crop",
+    "noListings": "No produce listings found.",
+    "filter": "Filter",
+    "sort": "Sort",
+    "sortByDate": "Sort by Date",
+    "sortByPrice": "Sort by Price",
+    "filterByCrop": "Filter by Crop Type",
+    "all": "All",
+    "loadMore": "Load More",
+    "errorLoading": "Error loading listings.",
+    "listingDetails": "Listing Details",
+    "quantity": "Quantity",
+    "price": "Price",
+    "viewDetails": "View Details",
+    "createListing": "Create Listing"
+  },
+  "ListingCard": {
+    "crop": "Crop",
+    "quantity": "Quantity",
+    "price": "Price",
+    "seller": "Seller",
+    "listedOn": "Listed on",
+    "status": "Status",
+    "available": "Available",
+    "sold": "Sold",
+    "delisted": "Delisted",
+    "contactSeller": "Contact Seller",
+    "viewDetails": "View Details"
+  },
+  "ListCropForm": {
+    "title": "List Your Crop",
+    "instructions": "Fill in the details of your produce for sale.",
+    "cropTypeLabel": "Crop Type",
+    "cropTypePlaceholder": "Enter crop type (e.g., Wheat, Rice)",
+    "quantityLabel": "Quantity",
+    "quantityPlaceholder": "Enter quantity in kg",
+    "priceLabel": "Price",
+    "pricePlaceholder": "Enter price per kg",
+    "descriptionLabel": "Description (optional)",
+    "descriptionPlaceholder": "Add more details about your produce (quality, variety, etc.)",
+    "submit": "Submit Listing",
+    "submitting": "Submitting...",
+    "successMessage": "Your crop has been listed successfully!",
+    "errors": {
+      "cropTypeRequired": "Crop type is required",
+      "quantityRequired": "Quantity is required and must be positive",
+      "priceRequired": "Price is required and must be positive",
+      "notAuthenticated": "You must be signed in to create a listing",
+      "submissionFailed": "Failed to create listing. Please try again."
+    },
+    "backToMarketplace": "Back to Marketplace"
+  },
+  "MarketPrices": {
+    "title": "Market Prices",
+    "description": "View current market prices for various agricultural commodities.",
+    "selectCrop": "Select Crop",
+    "chooseCrop": "Choose a crop",
+    "selectMarket": "Select Market",
+    "chooseMarket": "Choose a market",
+    "priceInformation": "Price Information",
+    "crop": "Crop",
+    "market": "Market",
+    "price": "Price",
+    "priceDate": "Price Date",
+    "source": "Source",
+    "selectBothPrompt": "Please select both a crop and a market to view price information.",
+    "errors": {
+      "loadingCrops": "Error loading crops. Please try again.",
+      "loadingMarkets": "Error loading markets. Please try again.",
+      "loadingPrice": "Error loading price data. Please try again.",
+      "priceNotFound": "No price information found for the selected combination.",
+      "generalError": "An unexpected error occurred. Please try again."
+    }
+  },
+  "CropAdvisory": {
+    "title": "Crop Advisory",
+    "description": "Access expert advice on crop management techniques and best practices.",
+    "readMorePrompt": "Read more about this topic.",
+    "viewTopic": "View Topic",
+    "backToTopics": "Back to Topics",
+    "viewAllTopics": "View All Topics",
+    "contentNotFound": "The requested content was not found.",
+    "noTopicsFound": "No advisory topics available.",
+    "errors": {
+      "loadingTopics": "Error loading advisory topics. Please try again.",
+      "loadingContent": "Error loading advisory content. Please try again.",
+      "contentNotFound": "The requested advisory content was not found.",
+      "generalError": "An unexpected error occurred. Please try again."
+    }
+  },
+  "PostHarvest": {
+    "title": "Post-Harvest Guidance",
+    "description": "Learn about best practices for handling and storing your harvest to reduce losses and maintain quality.",
+    "readMorePrompt": "Read more about this topic.",
+    "viewTopic": "View Topic",
+    "backToTopics": "Back to Topics",
+    "viewAllTopics": "View All Topics",
+    "contentNotFound": "The requested content was not found.",
+    "noTopicsFound": "No post-harvest guidance topics available.",
+    "errors": {
+      "loadingTopics": "Error loading post-harvest topics. Please try again.",
+      "loadingContent": "Error loading post-harvest content. Please try again.",
+      "contentNotFound": "The requested post-harvest content was not found.",
+      "generalError": "An unexpected error occurred. Please try again."
+    }
+  },
+  "crops": {
+    "wheat": "Wheat",
+    "rice": "Rice",
+    "cotton": "Cotton"
+  },
+  "markets": {
+    "delhi_azadpur_mandi": "Delhi Azadpur Mandi",
+    "mumbai_vashi_market": "Mumbai Vashi Market",
+    "gujarat_rajkot_market": "Gujarat Rajkot Market"
+  },
+  "units": {
+    "quintal": "Quintal",
+    "kg": "Kg"
+  },
+  "categories": {
+    "pest_management": "Pest Management",
+    "soil_health": "Soil Health",
+    "storage": "Storage",
+    "processing": "Processing"
+  },
+  "TransportRequest": {
+    "title": "Request Transportation",
+    "instructions": "Fill in the details of your transportation request.",
+    "produceTypeLabel": "Produce Type",
+    "produceTypePlaceholder": "Enter type of produce (e.g., Wheat, Rice)",
+    "quantityLabel": "Quantity",
+    "quantityPlaceholder": "Enter quantity (e.g., 500 kg)",
+    "pickupLocationLabel": "Pickup Location",
+    "pickupLocationPlaceholder": "Enter where the produce will be picked up",
+    "destinationLocationLabel": "Destination Location",
+    "destinationLocationPlaceholder": "Enter where the produce should be delivered",
+    "dateNeededLabel": "Date Needed",
+    "submit": "Submit Request",
+    "submitting": "Submitting...",
+    "successMessage": "Your transportation request has been submitted successfully!",
+    "submitAnother": "Submit Another Request",
+    "loading": "Loading...",
+    "signIn": "Sign In",
+    "errors": {
+      "produceTypeRequired": "Produce type is required",
+      "quantityRequired": "Quantity is required",
+      "pickupLocationRequired": "Pickup location is required",
+      "destinationLocationRequired": "Destination location is required",
+      "dateNeededRequired": "Date needed is required",
+      "dateInPast": "Date cannot be in the past",
+      "notAuthenticated": "You must be signed in to request transportation",
+      "submissionFailed": "Failed to submit request. Please try again."
+    }
+  },
+  "BrowseTransporters": {
+    "title": "Browse Transporters",
+    "description": "Find transporters available in your area to move your produce to market.",
+    "loading": "Loading transporters...",
+    "noTransporters": "No transporters are currently available.",
+    "serviceAreasLabel": "Service Areas",
+    "capacityLabel": "Capacity",
+    "contactInfoLabel": "Contact Information",
+    "contactInfoProtected": "Contact information available upon request",
+    "contactInfoNote": "Contact details may be provided only after a transportation request is confirmed",
+    "requestTransportCTA": "Request Transportation",
+    "notSpecified": "Not specified",
+    "errors": {
+      "loadingTransporters": "Error loading transporters. Please try again.",
+      "generalError": "An unexpected error occurred. Please try again."
+    }
+  },
+  "Feedback": {
+    "title": "Submit Feedback",
+    "instructions": "We value your feedback! Let us know how we can improve your experience with AgriConnect.",
+    "ratingLabel": "Rate Your Experience",
+    "commentsLabel": "Comments",
+    "commentsPlaceholder": "Tell us what you liked or how we can improve...",
+    "pageContextLabel": "Which page or feature is this feedback about? (Optional)",
+    "pageContextPlaceholder": "E.g., Marketplace, Crop Advisory, etc.",
+    "pageContextHelp": "Leave blank if your feedback is about the overall app",
+    "submit": "Submit Feedback",
+    "submitting": "Submitting...",
+    "successMessage": "Thank you for your feedback! Your insights help us improve AgriConnect.",
+    "submitAnother": "Submit More Feedback",
+    "loading": "Loading...",
+    "anonymousFeedbackNote": "You are submitting feedback anonymously. Sign in if you'd like us to follow up with you directly.",
+    "starRating": "star rating",
+    "rating1Label": "Very Dissatisfied",
+    "rating2Label": "Dissatisfied",
+    "rating3Label": "Neutral",
+    "rating4Label": "Satisfied",
+    "rating5Label": "Very Satisfied",
+    "errors": {
+      "commentsRequired": "Please provide some comments",
+      "ratingInvalid": "Please select a valid rating",
+      "submissionFailed": "Failed to submit feedback. Please try again."
+    }
+  }
+}
