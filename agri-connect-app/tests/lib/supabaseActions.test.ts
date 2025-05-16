@@ -21,11 +21,12 @@ jest.mock('@/services/supabase/client', () => {
 
   localMockSupabaseFrom.mockReturnValue(localBuilderInstance);
   localMockSelect.mockReturnValue(localBuilderInstance);
-  localMockInsert.mockReturnValue(localBuilderInstance);
-  localMockUpdate.mockReturnValue(localBuilderInstance);
-  localMockUpsert.mockReturnValue(localBuilderInstance);
+  localMockInsert.mockReturnValue(localBuilderInstance); // Default to chainable
+  localMockUpdate.mockReturnValue(localBuilderInstance); // Default to chainable
+  localMockUpsert.mockReturnValue(localBuilderInstance); // Default to chainable
   localMockEq.mockReturnValue(localBuilderInstance);
-  // localMockSingle is terminal.
+  // localMockSingle is terminal. It should be configured in tests or have a default mockResolvedValue here if always terminal.
+  localMockSingle.mockResolvedValue({ data: { mocked_local_single: 'default_data' }, error: null }); // Add a default for single
 
   return {
     __esModule: true,

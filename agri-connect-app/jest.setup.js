@@ -86,25 +86,21 @@ jest.mock('@/services/supabase/client', () => {
 
   mockClientFrom.mockReturnValue(clientBuilderInstance);
   mockClientSelect.mockReturnValue(clientBuilderInstance);
-  mockClientInsert.mockReturnValue(clientBuilderInstance); // For chaining after insert if applicable, or make it terminal
+  mockClientInsert.mockReturnValue(clientBuilderInstance);
   mockClientUpdate.mockReturnValue(clientBuilderInstance);
-  mockClientUpsert.mockReturnValue(clientBuilderInstance); // For chaining after upsert if applicable, or make it terminal
-  mockClientDelete.mockReturnValue(clientBuilderInstance); // For chaining after delete if applicable, or make it terminal
+  mockClientUpsert.mockReturnValue(clientBuilderInstance);
+  mockClientDelete.mockReturnValue(clientBuilderInstance);
   mockClientEq.mockReturnValue(clientBuilderInstance);
   mockClientOrder.mockReturnValue(clientBuilderInstance);
   
-  // Terminal methods should be configured in tests to resolve promises
-  // Default resolution for single, insert, update, upsert, delete if not configured by test
+  // Default resolution ONLY for truly terminal methods like .single()
+  // or methods that ALWAYS return a promise and are never chained further in the SUT.
   mockClientSingle.mockResolvedValue({ data: { mocked_client: 'data_client_single_default' }, error: null });
-  // For insert, update, upsert, delete, if they are directly awaited after the call:
-  // Example: await supabase.from('table').insert(newData);
-  // These often return a builder that then has a .select() or similar, or are terminal.
-  // If they are terminal and return a promise directly:
-  mockClientInsert.mockResolvedValue({ data: [{ mocked_client: 'insert_data_client_default' }], error: null });
-  mockClientUpdate.mockResolvedValue({ data: [{ mocked_client: 'update_data_client_default' }], error: null });
-  mockClientUpsert.mockResolvedValue({ data: [{ mocked_client: 'upsert_data_client_default' }], error: null });
-  mockClientDelete.mockResolvedValue({ data: [{ mocked_client: 'delete_data_client_default' }], error: null });
-
+  
+  // For methods like insert, update, upsert, delete:
+  // Their default is to return clientBuilderInstance for chaining (e.g., .upsert().select()).
+  // If a test needs them to be terminal (e.g. await supabase.from().insert()),
+  // the test itself should do: mockClientInsert_test.mockResolvedValueOnce(...);
 
   return {
     __esModule: true,
